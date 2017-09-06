@@ -1,0 +1,12 @@
+[Unit]
+Description=Waterfall effect with PIR
+After=multi-user.target
+
+[Service]
+User=pi
+Group=pi
+Type=idle
+ExecStart=/usr/bin/python /home/pi/Documents/python-pir-mp3/python-pir-mp3.py
+
+[Install]
+WantedBy=multi-user.target
